@@ -23,14 +23,19 @@ async function updateAllRows() {
     try {
         const usd = await getCurrencyData('USD');
         const eur = await getCurrencyData('EUR');
-        // USD left side up
+        const gbp = await getCurrencyData('GBP');
+        // USD 
         document.getElementById('usd-off').innerText = usd.official;
         document.getElementById('usd-buy').innerText = usd.buy;
         document.getElementById('usd-sell').innerText = usd.sell;
-        // EUR left side up
+        // EUR 
         document.getElementById('eur-off').innerText = eur.official;
         document.getElementById('eur-buy').innerText = eur.buy;
         document.getElementById('eur-sell').innerText = eur.sell;
+        //GBP
+        document.getElementById('gbp-off').innerText = gbp.official;
+        document.getElementById('gbp-buy').innerText = gbp.buy;
+        document.getElementById('gbp-sell').innerText = gbp.sell;
 
     } catch (e) {
         console.error(e);
@@ -73,5 +78,4 @@ async function convertCurrency() {
 
 // Initial call
 updateAllRows();
-
 convertCurrency();
