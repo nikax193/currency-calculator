@@ -1,0 +1,176 @@
+body {
+    background-color: #ffff ;
+    /* background-image: url(./back.jpg);
+    background-repeat:no-repeat;
+    background-size: cover; */
+    padding: 40px;
+    color: #333;
+}
+
+
+.section-1 {
+    display: flex;
+    padding: 0 230px;
+
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    /* color: rgb(23, 139, 0); */
+    background: -webkit-linear-gradient(#ff0000, #fdcf58);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+/* left side */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.valute-icon {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 35px;
+}
+
+.usd {
+    background-color: #fce4ec; 
+    color: #d81b60; 
+}
+.eur { 
+    background-color: #e8f5e9;
+    color: #1b5e20; 
+}
+.gbp { 
+    background-color: #e8f5e9;
+    color: #1b5e20; 
+}
+
+.details {
+    flex: 1;
+}
+
+.details .name{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.details .official {
+    font-size: 14px;
+    color: #50243f;
+    font-weight: 600;
+}
+
+.up { 
+    color: #2e7d32; 
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.down {
+    color: #d32f2f;
+    font-size: 12px; 
+    font-weight: 800;
+}
+
+.rate{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rate .type {
+    font-size: 16px;
+    color: #5c5c5c;
+    margin-bottom: 8px;  
+}
+
+.rate .kursi {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ /* conventer-exchange right side*/
+.converter {
+    width: 400px;
+    /* background: #a8eebe; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 900px;
+    margin-top: -280px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.input-group {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color:black;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.input-group select {
+    border: none;
+    padding: 12px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.swap {
+    text-align: center;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.rate-info {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #c411b2;
+    text-align: center;
+}
+

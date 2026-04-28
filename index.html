@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვალუტის კალკულატორი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="section-1">
+        <div class="container">
+            <h1>ვალუტის კალკულატორი</h1>
+            <!-- left side -->
+            <div class="list">
+                <!-- usd -->
+                <div class="item">
+                <div class="valute-icon usd">USD</div>
+                    <div class="details">
+                        <div class="name">1 აშშ დოლარი</div>
+                        <div class="official">ოფიციალური კურსი: <span id="usd-off">...</span>  
+                        <span class="down">⬇</span></div>
+                    </div>
+                    <div class="rate">
+                        <div class="type">ყიდვა</div>
+                        <div class="kursi"  id="usd-buy">...</div>
+                    </div>
+                      <div class="rate">
+                        <div class="type">გაყიდვა</div>
+                        <div class="kursi" id="usd-sell">...</div>
+                    </div>
+            </div>
+            <!--eur -->
+            <div class="item">
+                <div class="valute-icon eur">EUR</div>
+                    <div class="details">
+                        <div class="name">1 ევრო</div>
+                        <div class="official">ოფიციალური კურსი: <span id="eur-off">...</span> 
+                            <span class="up">⬆</span>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <div class="type">ყიდვა</div>
+                        <div class="kursi" id="eur-buy">...</div>
+                    </div>
+                      <div class="rate">
+                        <div class="type">გაყიდვა</div>
+                        <div class="kursi" id="eur-sell">...</div>
+                    </div>
+            </div>
+            <!-- GPB -->
+             <div class="item">
+                <div class="valute-icon gbp">GPB</div>
+                    <div class="details">
+                        <div class="name">1 გირვანქა სტერლინგი</div>
+                        <div class="official">ოფიციალური კურსი: <span id="gbp-off">...</span> 
+                            <span class="up">⬆</span>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <div class="type">ყიდვა</div>
+                        <div class="kursi" id="gbp-buy">...</div>
+                    </div>
+                      <div class="rate">
+                        <div class="type">გაყიდვა</div>
+                        <div class="kursi" id="gbp-sell">...</div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <!-- right side conventer -->
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" value="1" id="amountFrom" >
+                    <select id="currencyFrom">
+                        <option value="GEL" selected>GEL</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+            </div>
+                <div class="swap" id="swapBtn">🗘</div>
+
+            <div class="input-group">
+                <input type="number" value="2.7" id="amountTo">
+                    <select id="currencyTo">
+                        <option value="GEL" selected>GEL</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+            </div>
+
+            <div class="rate-info" id="rateDetail">1 USD = 2.7 GEL</div>
+        </div>
+    </div>
+
+    </section>    
+    <script src="main.js"></script>
+</body>
+</html>
