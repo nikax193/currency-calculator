@@ -1,39 +1,25 @@
 body {
     background-color: #ffff ;
-    /* background-image: url(./back.jpg);
-    background-repeat:no-repeat;
-    background-size: cover; */
     padding: 40px;
     color: #333;
 }
-
-
 .section-1 {
     display: flex;
     padding: 0 230px;
-
 }
-
-
 .container {
     width: 100%;
     max-width: 800px;
-    
 }
 
 h1{
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 50px;
-    /* color: rgb(23, 139, 0); */
-    background: -webkit-linear-gradient(#ff0000, #fdcf58);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3aa8ab;
     text-align: center;
 }
-
 /* left side */
-
 .list {
     display: flex;
     flex-direction: column;
@@ -41,15 +27,13 @@ h1{
     background: #fff;
     padding: 25px;
     border-radius: 10px;
-    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    background-color: #f9f6f6;
 }
-
 .item {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
 .valute-icon {
     width: 80px;
     height: 50px;
@@ -87,7 +71,7 @@ h1{
 
 .details .official {
     font-size: 14px;
-    color: #50243f;
+    color: #65687d;
     font-weight: 600;
 }
 
@@ -119,6 +103,7 @@ h1{
 .rate .kursi {
     font-size: 22px;
     font-weight: 600;
+    color: #c70505;
 }
 
  /* conventer-exchange right side*/
@@ -166,11 +151,34 @@ h1{
     cursor: pointer;
 }
 
+.rate-info-title {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.rate-info-title h3 {
+    color:#d81b60;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .rate-info {
     padding: 10px;
     font-size: 18px;
     font-weight: 700;
-    color: #c411b2;
+    color: #d81b60;
     text-align: center;
 }
 
+.chart-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-container {
+    position: relative;
+    flex-grow: 1;
+    min-height: 300px;
+    width: 100%;
+}
